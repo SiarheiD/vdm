@@ -10,3 +10,6 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+
+RedirectMatch ^/([a-z]{2,16})/?$ http://localhost:9000?location=$1
